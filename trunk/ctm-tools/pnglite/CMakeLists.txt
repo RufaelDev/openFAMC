@@ -1,0 +1,17 @@
+cmake_minimum_required (VERSION 2.8)
+
+# CWI IMTP CODEC: OPTIMZED MESH CODING WITH CERTH MESHES
+SET (LIB_NAME pnglite)
+
+FILE (GLOB sources
+		${CMAKE_CURRENT_SOURCE_DIR}/*.cpp
+		${CMAKE_CURRENT_SOURCE_DIR}/*.cc
+		${CMAKE_CURRENT_SOURCE_DIR}/*.c
+    )
+
+FILE (GLOB headers
+		${CMAKE_CURRENT_SOURCE_DIR}/*.h
+		${CMAKE_CURRENT_SOURCE_DIR}/*.hpp
+    )
+	
+ADD_LIBRARY(${LIB_NAME} STATIC ${sources} ${headers})

@@ -1,0 +1,8 @@
+The test data is based on the publication:
+
+Motion Capture Using Joint Skeleton Tracking and Surface Estimation 
+IEEE Conference on Computer Vision and Pattern Recognition 2009
+Juergen Gall, Carsten Stoll, Edilson de Aguiar, 
+Christian Theobalt, Bodo Rosenhahn, and Hans-Peter Seidel.
+
+Please cite this publication when you use this test data for your work

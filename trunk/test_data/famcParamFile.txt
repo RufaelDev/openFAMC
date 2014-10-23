@@ -1,0 +1,22 @@
+Parameters: keep one space between the parameter name and value~!
+FileName: outFamc   input/output file name (.mp4)
+sizeAnimSeg: 70  Size of each animation segment (e.g., sizeAnimSeg = 65).\n");
+transform: 0    0 = DCT, 1 = lifting, 2 = LD, 3 = lifting+LD, 4 = DCT + LD.\n");
+globalRMSE: 0   globalRMSE = if -1, the partition will be read from the file _partition.txt Otherwise, a single cluster will be considered.\n");
+ratioWeights: 0.05 controles the use of animation weights in [0, 1].\n");
+qAT: 12         quantization bits for dct-based affine transform encoding.\n");
+qCoord: 8       quantization bits for coordinates residuals.\n");
+qNormal: 8      quantization bits for normals residuals.\n");
+qColor: 8      quantization bits for colors residuals.
+qOther: 8      quantization bits for other attributes residuals.
+LD_auto: 0      specifies if simplification operations should be encoded (0=false, 1=true).
+LD_L: 1      number of decomposition layers for LD in {1,...,16}.
+LD_l: 1      number of encoded decomposition layers for LD in {1,...,LD_L}.
+LD_P: -1      number of P frames between two consecutive I frames.
+fr_per_seg: 15	   in {-1,0,...,number of frames in the animation segment - 2}
+LD_B: 3    number of B frames between two frames of type I or P.\n");
+LD_Pred: 1    predction mode for LD.
+SNR_L: 1    number of layers for DCT/lifting.
+SNR_l: 1    number of encoded layers for DCT/lifting in {1,...,SNR_L}
+Normal_Pred: 1   prediction mode for normals: 0=delta, 1=skinning, 2=tangent skinning, 3=adaptive
+statFile: FAMCstatout.txt    file to output the stream size
