@@ -775,9 +775,9 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 		ifs.ComputeVerticesTraversal(&partition);
 	}
 
-	ScalableResidualsDecoder SRDecCoord(numberOfFrames_-1, numberOfVertices_);
-	ScalableResidualsDecoder SRDecNormal(numberOfFrames_-1, numberOfNormals_);
-	ScalableResidualsDecoder SRDecColor(numberOfFrames_-1, numberOfColors_);
+	ScalableResidualsDecoder *SRDecCoord= new ScalableResidualsDecoder(numberOfFrames_-1, numberOfVertices_);
+	ScalableResidualsDecoder *SRDecNormal= new ScalableResidualsDecoder(numberOfFrames_-1, numberOfNormals_);
+	ScalableResidualsDecoder *SRDecColor = new ScalableResidualsDecoder(numberOfFrames_-1, numberOfColors_);
 
 
 	int * predNormal = NULL;
@@ -787,33 +787,33 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 	}
 	// we decode residual errors
 	if (transformType_==0) { // decode LIFTING-based
-			if (isCoordAnimated_) SRDecCoord.GenerateLayers(in);
-			if (isNormalAnimated_) SRDecNormal.GenerateLayers(in);
-			if (isColorAnimated_) SRDecColor.GenerateLayers(in);
+			if (isCoordAnimated_) SRDecCoord->GenerateLayers(in);
+			if (isNormalAnimated_) SRDecNormal->GenerateLayers(in);
+			if (isColorAnimated_) SRDecColor->GenerateLayers(in);
 
-			for (int layerSNR = 0; layerSNR < SRDecCoord.GetNLayers(); layerSNR++) {
-				if (isCoordAnimated_) SRDecCoord.DecodeLayer(layerSNR, in);
-				if (isNormalAnimated_) SRDecNormal.DecodeLayer(layerSNR, in);
-				if (isColorAnimated_) SRDecColor.DecodeLayer(layerSNR, in);
+			for (int layerSNR = 0; layerSNR < SRDecCoord->GetNLayers(); layerSNR++) {
+				if (isCoordAnimated_) SRDecCoord->DecodeLayer(layerSNR, in);
+				if (isNormalAnimated_) SRDecNormal->DecodeLayer(layerSNR, in);
+				if (isColorAnimated_) SRDecColor->DecodeLayer(layerSNR, in);
 			}
-			if (isCoordAnimated_) SetCoordResidualErrorsLift(SRDecCoord, anim, ifs,  motionModel);
-			if (isNormalAnimated_) SetNormalResidualErrorsLift(SRDecNormal, anim, ifs,  motionModel, predNormal);
-			if (isColorAnimated_) SetColorResidualErrorsLift(SRDecColor, anim);
+			if (isCoordAnimated_) SetCoordResidualErrorsLift(*SRDecCoord, anim, ifs,  motionModel);
+			if (isNormalAnimated_) SetNormalResidualErrorsLift(*SRDecNormal, anim, ifs,  motionModel, predNormal);
+			if (isColorAnimated_) SetColorResidualErrorsLift(*SRDecColor, anim);
 	}
 
 	if (transformType_==1) { // decode DCT-based
-			if (isCoordAnimated_) SRDecCoord.GenerateLayers(in);
-			if (isNormalAnimated_) SRDecNormal.GenerateLayers(in);
-			if (isColorAnimated_) SRDecColor.GenerateLayers(in);
+			if (isCoordAnimated_) SRDecCoord->GenerateLayers(in);
+			if (isNormalAnimated_) SRDecNormal->GenerateLayers(in);
+			if (isColorAnimated_) SRDecColor->GenerateLayers(in);
 
-			for (int layerSNR = 0; layerSNR < SRDecCoord.GetNLayers(); layerSNR++) {
-				if (isCoordAnimated_) SRDecCoord.DecodeLayer(layerSNR, in);
-				if (isNormalAnimated_) SRDecNormal.DecodeLayer(layerSNR, in);
-				if (isColorAnimated_) SRDecColor.DecodeLayer(layerSNR, in);
+			for (int layerSNR = 0; layerSNR < SRDecCoord->GetNLayers(); layerSNR++) {
+				if (isCoordAnimated_) SRDecCoord->DecodeLayer(layerSNR, in);
+				if (isNormalAnimated_) SRDecNormal->DecodeLayer(layerSNR, in);
+				if (isColorAnimated_) SRDecColor->DecodeLayer(layerSNR, in);
 			}
-			if (isCoordAnimated_) SetCoordResidualErrorsDCT(SRDecCoord, anim, ifs,  motionModel);
-			if (isNormalAnimated_) SetNormalResidualErrorsDCT(SRDecNormal, anim, ifs,  motionModel, predNormal);
-			if (isColorAnimated_) SetColorResidualErrorsDCT(SRDecColor, anim);
+			if (isCoordAnimated_) SetCoordResidualErrorsDCT(*SRDecCoord, anim, ifs,  motionModel);
+			if (isNormalAnimated_) SetNormalResidualErrorsDCT(*SRDecNormal, anim, ifs,  motionModel, predNormal);
+			if (isColorAnimated_) SetColorResidualErrorsDCT(*SRDecColor, anim);
 	}
 
 
