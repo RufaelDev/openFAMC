@@ -40,5 +40,7 @@ TODO:
 
 KNOWN ISSUES:
 
-The decoder in release mode sometimes crashes, debug works fine
+The decoder in release mode sometimes crashes, debug works fine.
+
+Provided for comparison and research purposes only, the reference software is not of industrial strength
 
