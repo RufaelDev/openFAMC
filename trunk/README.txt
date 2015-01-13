@@ -25,10 +25,15 @@ To build, use cmake 2.8 or higher gui
 8. To decode, run ctm-tools.exe dance_mesh.mp4 dance_mesh, 
 the --Exp options allows to set output mesh format, default: --Exp ".off", other formats are .ply, .obj etc....
 
-Tested on Windows 64-bit with Visual Studio 2010 
+Warning: Only Tested on Windows 7 64-bit with Visual Studio 2010 !!!!!
 
 
 TODO:
 
 1. DEBUG FAMC (at the time of writing encoding in multiple segments does not work)
 2. ADD LINUX SUPPORT (Both compilation (C++) and cmake need to be updated for this)
+
+KNOWN ISSUES:
+
+The decoder in release mode sometimes crashes, debug works fine
+

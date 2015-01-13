@@ -759,6 +759,7 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 	if ( DecodeHeader(anim, in, ifs) == false) return false;
 	anim.IFSToAnim(ifs, 0);
 	MotionModel * motionModel = NULL;
+
 	if (isCoordAnimated_) {
 		// we decode the motion model
 		DecodeGolobalMotion(in, anim);
@@ -774,7 +775,8 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 
 		ifs.ComputeVerticesTraversal(&partition);
 	}
-
+	//std::cout << "2" <<std::endl;
+	//std::cin.get();
 	ScalableResidualsDecoder *SRDecCoord= new ScalableResidualsDecoder(numberOfFrames_-1, numberOfVertices_);
 	ScalableResidualsDecoder *SRDecNormal= new ScalableResidualsDecoder(numberOfFrames_-1, numberOfNormals_);
 	ScalableResidualsDecoder *SRDecColor = new ScalableResidualsDecoder(numberOfFrames_-1, numberOfColors_);
@@ -816,7 +818,6 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 			if (isColorAnimated_) SetColorResidualErrorsDCT(*SRDecColor, anim);
 	}
 
-
 	float maxCoord[3] = {0.0f, 0.0f, 0.0f};
 	float minCoord[3] = {0.0f, 0.0f, 0.0f};
 	unsigned char nBitsCoord = 8;
@@ -857,7 +858,6 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 		}
 	}
 
-
 	if (transformType_==2 || 
 		transformType_==3 ||
 		transformType_==4){// decode anim LD-based 	
@@ -893,7 +893,7 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 		++segmentNumber;
 		printf("<======== LD end ==========>\n\n");
 	}
-
+	
 	if (transformType_==3){ //apply inv. LIFITING-transform to anim
 		printf("\n<======== inv. LIFTING-transform start ==========>\n");
 
@@ -1152,11 +1152,15 @@ bool FAMCDecoder::DecodeAU(FILE * in, Animation &anim, IndexedFaceSet & ifs){
 				}			
 			}			
 	}
-
+	
 
 	// free memory
 	if (motionModel != NULL) delete motionModel;
 	if (predNormal != NULL) delete [] predNormal;
+
+	std::cout << " finished decoding access unit, press a key to continue " <<std::endl;
+	std::cin.get();
+
 	return true;
 }
 
@@ -1175,7 +1179,8 @@ bool FAMCDecoder::Decode(char * file){
 	FILE * in = fopen(fin, "rb");
 	decoder.DecodeAU(in, myAnimDec, firstFrame);
 	fclose(in);
-
+	std::cout << " done decoding press a key to save the data " <<std::endl;
+	std::cin.get();
 	char fAnimOut[1024];
 	sprintf(fAnimOut, "%s_dec.wrl", file);
 	myAnimDec.SaveInterpolatorVRML2(fAnimOut, firstFrame);
@@ -1309,6 +1314,7 @@ bool FAMCDecoder::DecodeStream(char * file, int numberOfSpatialLayers,  Animatio
 		}
 		s++;
 	}
+	
 	fclose(in);
 
 	// update keys
