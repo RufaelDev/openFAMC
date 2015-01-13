@@ -19,6 +19,8 @@ freely, subject to the following restrictions:
     3. This notice may not be removed or altered from any source
     distribution.
 
+MPEG Reference Software: ISO License granted, all rights reserved by copyright owners
+
 CHANGES CWI
 Copyright (c) 2014- Rufael Mekuria, Centrum Wiskunde Informatica
 added FAMC support to the openctm libraries for convenience in using openctm. 
