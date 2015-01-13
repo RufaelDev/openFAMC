@@ -1,5 +1,10 @@
 This is a Cmake build of the reference software of MPEG-4 Part 16 AFX FAMC 
 
+Encoding/Decoding Syntax: 
+
+Encoder:  //ctm-tools//Debug//ctm-tools.exe dog_mesh dog_mesh.mp4
+Decoder:  //ctm-tools//Debug//ctm-tools.exe dog_mesh.mp4 dog_mesh
+
 composed by Centrum Wiskunde Informatica Wiskunde Informatica.
 contact: rufael mekuria rufael.mekuria@cwi.nl
 
