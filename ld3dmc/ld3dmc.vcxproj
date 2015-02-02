@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2C150189-EA92-4405-BCD2-69A080E75373}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ld3dmc</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ld3dmc.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ld3dmc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ld3dmc.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ld3dmc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ld3dmc.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ld3dmc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ld3dmc.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ld3dmc</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\BaseFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\..\ld3dmc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ld3dmc/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ld3dmc\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DPCMDec.h" />
+    <ClInclude Include="DPCMEnc.h" />
+    <ClInclude Include="DPCMPred.h" />
+    <ClInclude Include="DPCMPredDelta.h" />
+    <ClInclude Include="DPCMPredLin.h" />
+    <ClInclude Include="DPCMPredNonLin.h" />
+    <ClInclude Include="DynamicMesh.h" />
+    <ClInclude Include="DynamicMeshBase.h" />
+    <ClInclude Include="FAMCCabacVx3Decoder.h" />
+    <ClInclude Include="FAMCCabacVx3Encoder.h" />
+    <ClInclude Include="FAMCLayeredDecompositionDecoder.h" />
+    <ClInclude Include="FAMCSimplificationModeDecoder.h" />
+    <ClInclude Include="FAMCSimplificationModeEncoder.h" />
+    <ClInclude Include="FAMCVertexInfoDecoder.h" />
+    <ClInclude Include="FAMCVertexInfoEncoder.h" />
+    <ClInclude Include="LayeredDecomposerAutomatic.h" />
+    <ClInclude Include="LayeredDecomposerUserBased.h" />
+    <ClInclude Include="LayeredDecomposition.h" />
+    <ClInclude Include="LayeredSimplificationOperationsFactory.h" />
+    <ClInclude Include="LD3DMCParam.h" />
+    <ClInclude Include="LDFrameOrderFactory.h" />
+    <ClInclude Include="LDFrameTypeData.h" />
+    <ClInclude Include="LDQuant1D.h" />
+    <ClInclude Include="LDQuant3D.h" />
+    <ClInclude Include="LDReader.h" />
+    <ClInclude Include="LDRecon1D.h" />
+    <ClInclude Include="LDRecon3D.h" />
+    <ClInclude Include="LDSegmentDecoder.h" />
+    <ClInclude Include="LDSegmentDecomposer.h" />
+    <ClInclude Include="LDSegmentEncoder.h" />
+    <ClInclude Include="LDSegmentReconstructor.h" />
+    <ClInclude Include="LDWriter.h" />
+    <ClInclude Include="MeshTypes.h" />
+    <ClInclude Include="MyPredI.h" />
+    <ClInclude Include="MySimplePreds.h" />
+    <ClInclude Include="PatchDecomposer.h" />
+    <ClInclude Include="PointT.h" />
+    <ClInclude Include="PointUtils.h" />
+    <ClInclude Include="PredI.h" />
+    <ClInclude Include="SConnectivity.h" />
+    <ClInclude Include="SimplificationDecomposer.h" />
+    <ClInclude Include="SimplificationOperationsFactory.h" />
+    <ClInclude Include="Stat.h" />
+    <ClInclude Include="stdint.h" />
+    <ClInclude Include="TraversalDecomposer.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="VertexContext.h" />
+    <ClCompile Include="DynamicMesh.cpp"  />
+    <ClCompile Include="DynamicMeshBase.cpp"  />
+    <ClCompile Include="FAMCCabacVx3Decoder.cpp"  />
+    <ClCompile Include="FAMCCabacVx3Encoder.cpp"  />
+    <ClCompile Include="FAMCSimplificationModeDecoder.cpp"  />
+    <ClCompile Include="FAMCSimplificationModeEncoder.cpp"  />
+    <ClCompile Include="FAMCVertexInfoEncoder.cpp"  />
+    <ClCompile Include="LDFrameOrderFactory.cpp"  />
+    <ClCompile Include="LDReader.cpp"  />
+    <ClCompile Include="LDSegmentDecoder.cpp"  />
+    <ClCompile Include="LDSegmentDecomposer.cpp"  />
+    <ClCompile Include="LDSegmentEncoder.cpp"  />
+    <ClCompile Include="LDSegmentReconstructor.cpp"  />
+    <ClCompile Include="LDWriter.cpp"  />
+    <ClCompile Include="MyPredI.cpp"  />
+    <ClCompile Include="PointUtils.cpp"  />
+    <ClCompile Include="Stat.cpp"  />
+    <ClCompile Include="FAMCVertexInfoDecoder.cc"  />
+    <ClCompile Include="LayeredDecomposerAutomatic.cc"  />
+    <ClCompile Include="LayeredDecomposerUserBased.cc"  />
+    <ClCompile Include="SConnectivity.cc"  />
+    <ClCompile Include="SimplificationDecomposer.cc"  />
+    <ClCompile Include="SimplificationOperationsFactory.cc"  />
+    <ClCompile Include="TraversalDecomposer.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ZERO_CHECK.vcxproj">
+      <Project>9686F04D-DBBC-4B01-80E3-1078E458EF4E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

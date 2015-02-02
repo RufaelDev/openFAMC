@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1910E0E6-FC77-4F47-B0AE-1EF426D28E22}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\glew;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\pnglite;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\rply;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\tinyxml;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\zlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\openctmlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCCodec;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\ld3dmc;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\BaseFAMC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\glew;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\pnglite;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\rply;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\tinyxml;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\zlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\openctmlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCCodec;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\ld3dmc;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\BaseFAMC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\glew;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\pnglite;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\rply;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\tinyxml;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\zlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\openctmlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCCodec;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\ld3dmc;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\BaseFAMC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\CWI\Documents\mpeg\openfamc\openFAMC;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\glew;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\pnglite;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\rply;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\tinyxml;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\zlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\openctmlib;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCCodec;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCDecoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\FAMCEncoder;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\ld3dmc;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\Commun;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\..\BaseFAMC;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/CWI/Documents/mpeg/openfamc/openFAMC -BC:/Users/CWI/Documents/mpeg/openfamc/openFAMC --check-stamp-file C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeFiles\19cb8a30551e60092e9312d17f096efa\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/CMakeFiles/19cb8a30551e60092e9312d17f096efa/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/CMakeFiles/19cb8a30551e60092e9312d17f096efa/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/CMakeFiles/19cb8a30551e60092e9312d17f096efa/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\ALL_BUILD</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/CMakeFiles/19cb8a30551e60092e9312d17f096efa/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\CWI\Documents\mpeg\openfamc\openFAMC\ctm-tools\CMakeFiles\ALL_BUILD</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/CTM-TOOLS.vcxproj">
+      <Project>610719B7-0782-4CBB-87E1-DD323EF0F51E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/glew/GLEW.vcxproj">
+      <Project>C80BF5B7-D73D-4E62-A93C-54AD4A042E0A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/tinyxml/TINYXML.vcxproj">
+      <Project>445D4864-0103-4B08-B270-C5ED70AAD219</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/zlib/ZLIB.vcxproj">
+      <Project>D788D3CF-7546-47E1-8179-65826F1A03E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/pnglite/pnglite.vcxproj">
+      <Project>3DD386E1-1C8E-45C1-B59D-85675E274FC4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/CWI/Documents/mpeg/openfamc/openFAMC/ctm-tools/rply/rply.vcxproj">
+      <Project>DC915D0E-36B4-43BD-A0C7-645A2507AF12</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
